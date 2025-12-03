@@ -1,56 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+</head>
+<body>
+<div class="container">
+<h1> Wildeye AI: Drone-Powered Wildlife Detection Using TensorFlow</h1>
+
+<p>Wildeye AI is an automated wildlife monitoring system that uses drones, deep learning, and real-time dashboards to detect and classify animals from aerial footage. Built using the TensorFlow Object Detection API, CNNs, and Plotly Dash, the system aims to revolutionize wildlife conservation by providing accurate, scalable, and non-intrusive monitoring capabilities.</p>
+
+<h2>🚀 Project Overview</h2>
+<p>Traditional wildlife monitoring methods are slow, manual, and limited in coverage. Wildeye AI solves these challenges using autonomous drone surveillance, real-time object detection, and deep learning models.</p>
+
+<h2>🧠 Key Features</h2>
+<ul>
+    <li>Real-Time Wildlife Detection from drone video feeds</li>
+    <li>TensorFlow-based CNN and ResNet Logistic Regression models</li>
+    <li>Interactive Plotly Dash Dashboard</li>
+    <li>Custom-labeled dataset + Animals-10 dataset</li>
+    <li>Automated reporting and species analytics</li>
+</ul>
 
 
-# Augmenting wildlife conservation efforts using Tensorflow Object Detection API
-KRST flagship project done under the UIG co-creation platform.
-Drones as a great data collection tool, coupled with Machine Learning techniques will augment our ability to study, manage and protect wildlife ecosystems and aid in combating a plethora
-of wildlife conservation challenges. 
+<h2> Tech Stack</h2>
+<ul>
+    <li>Python, TensorFlow, Keras, Sklearn</li>
+    <li>OpenCV, Plotly Dash</li>
+    <li>Drones with high-resolution cameras</li>
+</ul>
 
-This work was done with the guide and help from Plotly Dash https://github.com/plotly and Tensorflow Object Detection API https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/
+<div class="box">
+<h2>🔄 Data Flow Diagram </h2>
 
+<h3>🌐 System Overview</h3>
+<ul>
+    <li><b>Drone System → Detection System:</b> Sends real-time aerial footage.</li>
+    <li><b>Detection System → Wildlife Database:</b> Stores species & tracking data.</li>
+    <li><b>User Interface ↔ Detection System:</b> Real-time dashboard access and interaction.</li>
+<img width="415" height="321" alt="DFD1 drawio" src="https://github.com/user-attachments/assets/d63f8eab-7f40-4425-ad26-40bb8fbffc69" />
 
-## Object Detection using Neural Network and Plotly Dash
+  
+</ul>
 
-The goal is to use an Object detection API to identify the animal in the drone video stream.
-Classify species of animals based on images coming from drone streams. Automatically help identify animals in the wild taken by wildlife conservatories. The dashboard where the objects of interest are detected is shown below.
-![](images/krstmodel.png)
+<h3>⚙️Internal Processes</h3>
+<ul>
+    <li><b>Data Collection → Preprocessing:</b> Extract frames, clean, resize, normalize.</li>
+    <li><b>Preprocessing → Model Classification:</b> CNN/ResNet-based species prediction.</li>
+    <li><b>Classification → Visualization:</b> Detected species & confidence sent to dashboard.</li>
+    <li><b>Species Database ↔ Visualization:</b> Stores and retrieves historical detection data.</li>
+</ul>
 
-## Installation and Usage
-
-First, install all dependencies listed in requirements.txt
-
-* Clone the repo and cd into the krst_objectDetection directory
-
-* $ pip install -r requirements.txt
-
-Run app.py script to launch a local Dash server to host the Dash app. 
-
-* python app.py
-
-* A link will appear in your console; Navigate to http://0.0.0.0:8050 on a browser tab to see the results.
-
-## Method
-
-Train images of animals from six different species with thousands of labeled pictures using Convulational Neural Network. Data came from Animals-10 dataset in kaggle. Only chose six of the available species due to computer processing limitations, as well as fixed time window to run experiment.
-All process and methods can be found in the Final Notebook
+<img width="415" height="554" alt="DFD2 drawio" src="https://github.com/user-attachments/assets/bb76f9e2-90e7-425e-8ad1-ce492b1e1f35" />
 
 
-## Conclusion
+<h3>🔧 User-Level Functions</h3>
+<ul>
+    <li><b>Live Video Processing:</b> Frame extraction & real-time inference.</li>
+    <li><b>Species Detection:</b> Bounding boxes, labels, confidence scoring.</li>
+    <li><b>Analytics Engine:</b> Graphs, counts, detection insights.</li>
+    <li><b>Data Logging:</b> Stores detection events for reports.</li>
+</ul>
 
-This model can excellently guess a picture of an animal if the shape of the animal is in the training method. However, the model does not seem to do well on aerial videos or images. To train it in additional animals, simply feed it labeled images (1000 at least for training and 300+ for validation). 
+<img width="960" height="485" alt="DFD3 drawio" src="https://github.com/user-attachments/assets/e7472382-10ef-4743-9002-4197f757c436" />
 
 
-## Issues
-* improve Detection  accurary
-* train on more aerial data
-* deploy application live
-
-## Licensing**
-[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
-
-## Authors
-Badisa Mosesane 
-
-## Contributing** 
-We thank the work done by Plotly Dash https://github.com/plotly and referenced most of the work here.
-Send us a PR at https://github.com/BadisaMosesane/krst_objectDetection
-
+</div>
+</body>
+</html>
