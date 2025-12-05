@@ -64,6 +64,20 @@
 
 <img width="960" height="485" alt="DFD3 drawio" src="https://github.com/user-attachments/assets/e7472382-10ef-4743-9002-4197f757c436" />
 
+<h3>Plotly Dash Dashboard</h3>
+
+<h3>Wildlife Detection and Analysis Interface </h3>
+
+<img width="1166" height="650" alt="Screenshot 2025-12-05 230218" src="https://github.com/user-attachments/assets/d5a67a93-315f-4f51-8573-1badc539a05e" />
+
+<h3>Object Detection Confidence and Object Count Analysis in Wildlife Monitoring</h3>
+
+<img width="1164" height="666" alt="Screenshot 2025-12-05 230529" src="https://github.com/user-attachments/assets/4a1314e7-af69-4368-94f3-839fd9e52f64" />
+
+
+<h3>Detection Score Visualization for Most Probable Objects Identified by Wildeye-AI</h3>
+<img width="1170" height="627" alt="Screenshot 2025-12-05 230542" src="https://github.com/user-attachments/assets/cc1c3a09-95eb-4aa1-a10b-0a9fe1bad236" />
+
 
 </div>
 </body>
